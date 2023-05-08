@@ -106,7 +106,7 @@ void initGPUBuffers(void)
 	glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(points), points);
 	glBufferSubData(GL_ARRAY_BUFFER, sizeof(points), sizeof(colors), colors);
 	glBufferSubData(GL_ARRAY_BUFFER, sizeof(points) + sizeof(colors), sizeof(normals), normals);
-
+	//fdsfsdlfjkl
 
 }
 
@@ -190,8 +190,7 @@ void keyboard(unsigned char key, int x, int y)
 	// keyboard handler
 
 	switch (key) {
-	case 033:			// 033 is Escape key octal value
-		exit(1);		// quit program
+	case 033:			// quit program
 		break;
 	case 'x':
 		model *= RotateX(dr);
